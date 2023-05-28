@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h2 style="font-family: Edwardian Script ITC;">Choose what makes your Tummy Tight!!</h2>
+  </header>
+  <main>
+    <section id="menu">
+      <h2 style="font-family: Edwardian Script ITC;">Menu</h2>
+        <div class="burger"></div><div class="pizza"></div><div class="fries"></div><div class="salad"></div>
+    </section>
+  <section id="order">
+    <div class="xyz">
+        <form method="POST" action="orders.php">
+        <h2 style="font-family: Edwardian Script ITC;">Order</h2>
+          <label for="Rollno">Roll Number</label>
+          <input style="width:100%" type="text" id="roll" name="roll" required>
+          <br>
+          <label for="burger">Burger</label>
+          <input style="width:100%" type="number" id="burger" name="burger" min="0" max="10">
+          <br>
+          <label for="pizza">pizza</label>
+          <input style="width:100%" type="number" id="pizza" name="pizza" min="0" max="10">
+          <br>
+          <label for="fries">fries</label>
+          <input style="width:100%" type="number" id="fries" name="fries" min="0" max="10">
+          <br>
+          <label for="Salad">Salad</label>
+          <input style="width:100%" type="number" id="salad" name="salad" min="0" max="10">
+          <br>
+          <label for="total">Total:</label>
+          <input style="width:100%" type="text" id="total" name="total" readonly>
+          <br>
+          <button  id="submit" name="submit" style="font-family: Edwardian Script ITC;width: 100%;">Place Order</button>
+        </form>
+        </div>
+        </section>
+        
+        
+        <script type="module">
+          
+// Get the input fields for burger, pizza, fries, and salad
+const burgerInput = document.getElementById("burger");
+const pizzaInput = document.getElementById("pizza");
+const friesInput = document.getElementById("fries");
+const saladInput = document.getElementById("salad");
+
+// Get the total input field
+const totalInput = document.getElementById("total");
+
+// Listen for changes in the input fields
+burgerInput.addEventListener("input", calculateTotal);
+pizzaInput.addEventListener("input", calculateTotal);
+friesInput.addEventListener("input", calculateTotal);
+saladInput.addEventListener("input", calculateTotal);
+
+// Define the prices for each item
+const burgerPrice = 10;
+const pizzaPrice = 10;
+const friesPrice = 10;
+const saladPrice = 10;
+
+// Calculate the total amount and display it in the total input field
+function calculateTotal() {
+  const burgerQuantity = burgerInput.value;
+  const pizzaQuantity = pizzaInput.value;
+  const friesQuantity = friesInput.value;
+  const saladQuantity = saladInput.value;
+
+  const totalAmount =
+    burgerQuantity * burgerPrice +
+    pizzaQuantity * pizzaPrice +
+    friesQuantity * friesPrice +
+    saladQuantity * saladPrice;
+
+  totalInput.value = totalAmount;
+} 
+      </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin: 0;
+    margin-top: 0;
+    font-size: 36px;
+    text-align: center;
+    
+  }
+  
+  main {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  section {
+    flex: 1;
+    background-color: lightgray;
+    padding: 80px;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    background-color: snow;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+  
+  .xyz {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  input, select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    /* width: 100%; */
+  }
+  
+  button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 100%; */
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  .burger{
+    position: absolute;
+    left: 180px;
+    top:260px;
+    width: 145px;
+    height: 145px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    background-image: url(https://i.pinimg.com/564x/e5/6c/7e/e56c7e393100191ba9958d734cd0d0f2.jpg);
+    
+  }
+  .pizza{
+    position: absolute;
+    left: 460px;
+    top:260px;
+    width: 145px;
+    height: 145px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    background-image: url("https://i.pinimg.com/564x/ac/b9/14/acb914bef0f871b6b166f39de2919dd5.jpg");
+  }
+  .fries{
+    position: absolute;
+    left: 180px;
+    top:470px;
+    width: 145px;
+    height: 145px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    background-image: url("https://i.pinimg.com/736x/22/40/08/224008b0cad3ed4fb556b714dfbb2866.jpg");
+  }
+  .salad{
+    position: absolute;
+    left: 460px;
+    top:470px;
+    width: 145px;
+    height: 145px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    background-image: url("https://i.pinimg.com/564x/1a/23/5c/1a235c751663f04906144325c172e5fc.jpg");
+    
+  }
+  form{
+    width: 100%;
+  }
+  @media(max-width:520px){
+      
+      form{
+    width: 100%;
+  }
+      
+    .burger{
+      position: absolute;
+      left: 100px;
+      top:240px;
+      width: 77px;
+      height: 76px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 20%;
+      background-image: url(https://i.pinimg.com/564x/e5/6c/7e/e56c7e393100191ba9958d734cd0d0f2.jpg);
+      
+    }
+    .pizza{
+      position: absolute;
+      left: 100px;
+      top:350px;
+      width: 77px;
+      height: 76px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 20%;
+      background-image: url("https://i.pinimg.com/564x/ac/b9/14/acb914bef0f871b6b166f39de2919dd5.jpg");
+    }
+    .fries{
+      position: absolute;
+      left: 100px;
+      top:460px;
+      width: 77px;
+      height: 76px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 20%;
+      background-image: url("https://i.pinimg.com/736x/22/40/08/224008b0cad3ed4fb556b714dfbb2866.jpg");
+    }
+    .salad{
+      position: absolute;
+      left: 100px;
+      top:570px;
+      width: 77px;
+      height: 76px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 20%;
+      background-image: url("https://i.pinimg.com/564x/1a/23/5c/1a235c751663f04906144325c172e5fc.jpg");
+      
+    }
+    main{
+      grid-template-columns: 0.3fr 0.7fr;
+    }
+  }
