@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .container button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Canteen Automation System</h1><br><br>
+    <h2  style="text-align: center;font-family: cursive;">Good Day Good Meal !!</h2>
+  </header>
+
+  <div class="container">
+    <button onclick="redirectToStudentLogin()">Student Login</button>
+    <button onclick="redirectToStudentRegister()">Student Register</button>
+    <button onclick="redirectToOwnerPage()">Owner Login</button>
+  </div>
+
+  <script>
+    function redirectToStudentLogin() {
+      window.location.href = "Student_Login.html";
+    }
+    
+    function redirectToStudentRegister() {
+      window.location.href = "Student_Register.html";
+    }
+
+    function redirectToOwnerPage() {
+      window.location.href = "ownerLogin.html";
+    }
+  </script>
+</body>
+</html>
